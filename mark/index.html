@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mark element example</title>
+<style>
+  body,html {
+    height:100%;
+    margin:0;
+  }
+  section {
+    box-sizing:border-box;
+    display:flex;
+    flex-wrap:wrap;
+    height:100%;
+  }
+
+  textarea,div {
+    font-size:24px;
+    flex:1;
+    min-width:300px;
+    padding:20px 20px;
+    box-sizing:border-box;
+  }
+
+  textarea {
+    background:pink;
+    border:0;
+  }
+
+  div {
+    background:teal;
+  }
+
+</style>
+</head>
+<body>
+  <section>
+    <textarea><p>I also have some <mark>kitten</mark>s who are visiting me these days. They're really cute. I think they like my garden! Maybe I should adopt a <mark>kitten</mark>.</p></textarea>
+    <div><p>I also have some <mark>kitten</mark>s who are visiting me
+    these days. They're really cute. I think they like my garden! Maybe I
+    should adopt a <mark>kitten</mark>.</p></div>
+  </section>
+  <section>
+    <textarea>
+<code>
+while( <mark>a = s[i]</mark> ) {
+    i++;
+}
+</code>
+</textarea>
+    <div><code>
+while( <mark>a = s[i]</mark> ) {
+    i++;
+}
+</code>
+</div>
+  </section>
+
+
+</body>
+</html>
