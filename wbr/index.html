@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>wbr element example</title>
+<style>
+  section {
+    resize: both;
+    display:flex;
+    border:3px solid darkgrey;
+    overflow:hidden;
+    padding:1em;
+    width:390px;
+    font-size:24px;
+  }
+
+  article,aside {
+    min-width:220px;
+    max-width:500px;
+  }
+
+  article {
+    flex:1;
+    padding:15px;
+    background:#03a9f4;
+    text-align: center;
+  }
+
+  aside {
+    flex:1;
+    background:#cddc39;
+    padding:15px;
+    text-align:center;
+    white-space: nowrap;
+  }
+
+</style>
+</head>
+<body>
+<section>
+  <article>
+    <p>Etiam ut pretium nisi, sit amet suscipit nunc.</p>
+  </article>
+  <aside>
+    <p>Etiam ut pretium nisi, <wbr>sit amet suscipit nunc.</p>
+  </aside>
+</section>
+
+</body>
+</html>
