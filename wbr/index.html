@@ -5,6 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>wbr element example</title>
 <style>
+  body {
+    font-size:24px;
+  }
+
   section {
     resize: both;
     display:flex;
@@ -12,7 +16,6 @@
     overflow:hidden;
     padding:1em;
     width:390px;
-    font-size:24px;
   }
 
   article,aside {
@@ -35,9 +38,24 @@
     white-space: nowrap;
   }
 
+  div {
+    width:590px;
+    padding:10px;
+    border:3px solid darkgrey;
+    overflow:visible;
+  }
+
 </style>
 </head>
 <body>
+  <div>
+    <a href="https://docs.google.com/spreadsheets/d/1ozU8nmT7fPmHloDYT5sopQPaGimFnZziN6NGFrgcodY/edit#gid=0">https://docs.google.com/spreadsheets/d/1ozU8nmT7fPmHloDYT5sopQPaGimFnZziN6NGFrgcodY/edit#gid=0</a>
+  </div>
+  <p></p>
+  <div>
+    <a href="https://docs.google.com/spreadsheets/d/1ozU8nmT7fPmHloDYT5sopQPaGimFnZziN6NGFrgcodY/edit#gid=0">https://docs.google.com<wbr>/spreadsheets<wbr>/d<wbr>/1ozU8nmT7fPmHloDYT5sopQPaGimFnZziN6NGFrgcodY<wbr>/edit#gid=0</a>
+  </div>
+<hr>
 <section>
   <article>
     <p>Etiam ut pretium nisi, sit amet suscipit nunc.</p>
@@ -46,6 +64,5 @@
     <p>Etiam ut pretium nisi, <wbr>sit amet suscipit nunc.</p>
   </aside>
 </section>
-
 </body>
 </html>
